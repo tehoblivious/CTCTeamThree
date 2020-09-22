@@ -25,3 +25,4 @@ hs_err_pid*
 /ChattChiro/nbproject/private/
 /ChattChiro/nbproject
 .DS_Store
+/ChattChiro/dist/
