@@ -23,6 +23,11 @@
 hs_err_pid*
 /ChattChiro/build/
 /ChattChiro/nbproject/private/
-/ChattChiro/nbproject
+/ChattChiro/nbproject/ant-deploy.xml
+/ChattChiro/nbproject/build-impl.xml
+/ChattChiro/nbproject/genfiles.properties
+/ChattChiro/nbproject/project.properties
+/ChattChiro/nbproject/project.xml
+
 .DS_Store
 /ChattChiro/dist/
