@@ -28,7 +28,7 @@ hs_err_pid*
 /ChattChiro/nbproject/genfiles.properties
 /ChattChiro/nbproject/project.properties
 /ChattChiro/nbproject/project.xml
-
+.vscode
 .DS_Store
 /ChattChiro/dist/
 /ChattChiro/.gradle/
