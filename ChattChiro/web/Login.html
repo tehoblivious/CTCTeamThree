@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title> LoginPage</title>
+    <!-- let's add some bootstrap for good measure -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <!-- back to your CSS: -->
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <!-- <link rel="stylesheet" type="text/scss" href="style.scss">  -->
+    <!-- doesn't work just like that -->
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="login-page">
+
+            <!-- <br><br><br><br><br> -->
+            <!-- doing it via CSS is better. -->
+
+
+            <form action="user.html" class="form">
+
+
+                <p align="center">Email </p>
+                <input type="text" placeholder="Enter Email Address" name="email" required><br>
+                <!-- WAIT A MINUTE, why is there  
+					BOTH an EMAIL 
+					AND A username
+					they almost never happens, it's mostly an "OR" 
+					email OR username, not both simultaneously, 
+				unless signing up of course, yet this says login.html, not "register.html"
+			-->
+
+                <p align="center">UserName</p>
+                <input type="text" placeholder="Enter Username" name="username" required>
+
+                <p align="center">Password </p>
+                <input type="password" placeholder="Enter Password" name="password" required>
+
+
+
+                <!-- <input type="Submit" placeholder="Login"> -->
+                <input type="Submit" value="Login">
+
+            </form>
+        </div>
+    </div>
+    author: ksk, and Nick (edits, v2).
+</body>
+
+</html>

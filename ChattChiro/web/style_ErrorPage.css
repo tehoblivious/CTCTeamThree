@@ -1,0 +1,249 @@
+@charset "ISO-8859-1";
+
+* {
+	box-sizing: border-box;
+}
+
+html {
+	/* 	background-color: #777; */ 
+	/* using body instead */
+}
+
+/* Style the header */
+header {
+	padding: 5px;
+	text-align: center;
+	font-size: 35px;
+	color: white;
+	background-color: hsla(0, 0%, 40%, 0.46); /* transparent grey */
+	/* 	background-color: #666; */
+    height: 60px;
+    text-shadow: 4px 2px 0px black;
+}
+
+/* The animation code */
+@keyframes background {
+ 	from {background-color: hsl(0, 30%, 71%););}
+	to {background-color: hsl(0, 35%, 55%);}
+}
+
+/* The animation code (( FLASHY seizure version )) */
+@keyframes backgroundSeizure {
+	from {background-color: hsl(0, 0%, 0%););}
+	to {background-color: hsl(0, 100%, 100%);}
+}
+
+/* The element to apply the animation to */
+body {
+	font-family: Arial, Helvetica, sans-serif;
+	margin: 0;
+	background-color: hsl(54, 30%, 71%);
+    padding: 50px;
+	animation-name: background;
+	animation-duration: 4s;
+	animation-iteration-count: infinite; 
+	animation-direction: alternate;
+}
+
+h1 {
+	margin: 5px;
+    font-style: italic;
+    font-size: 36pt;
+    text-shadow: 4px 9px 20px rgba(255, 240, 0, 0.46);
+    padding-bottom: 10px;
+}
+
+h2 {
+    padding: 20px;
+    width: 50%;
+    background: rgba(255, 0, 0, 0.88);
+    color: white;
+    /* REMEMBER, CTRL_F5 when CSS doesn't reload */ 
+}
+
+p {
+	border: 2px solid white;
+    padding: 20px;
+    width: 50%;
+    background: rgba(227, 255, 196, 0.37);
+}
+
+.code {
+	width: 547px;
+    background: hsla(0, 0%, 10%, 1);
+    font-family: monospace;
+    font-size: 12pt;
+    /* padding-top: 0px; */
+    margin-top: 0px;
+    margin-left: 20pt;
+    padding: 5px 0px 5px 10px;
+    border: 2px solid hsla(65, 96%, 49%, 0.44);
+    color: hsla(0, 0%, 70%, 1);
+}
+
+/* Create two columns/boxes that floats next to each other */
+nav {
+	float: left;
+	width: 30%;
+	height: 300px; /* only for demonstration, should be removed */
+	background: #ccc;
+	padding: 20px;
+}
+
+/* Style the list inside the menu */
+nav ul {
+	list-style-type: none;
+	padding: 0;
+}
+
+article {
+	float: left;
+	padding: 20px;
+	width: 70%;
+	background-color: #f1f1f1;
+	height: 300px; /* only for demonstration, should be removed */
+}
+
+img {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.center {
+	text-align: center;
+	border: 20px solid hsla(0, 0%, 33%, 1);
+	float: center;
+	padding: 60px;
+	background-color: white;
+	float: center
+}
+
+input[type=submit] {
+	/* 	now we're just using id element instead  */
+	
+}
+
+#loginButton {
+	border: none;
+	color: white;
+	padding: 16px 32px;
+	background-color: hsl(208, 57%, 35%);
+	font-size: 14pt;
+	width: 150px;
+}
+
+#loginButton:hover {
+	background-color: hsl(208, 57%, 45%);
+	text-decoration: underline;
+}
+
+#clearButton {
+	border: none;
+	color: white;
+	padding: 16px 32px;
+	background-color: hsl(0, 0%, 25%);
+	font-size: 14pt;
+	width: 150px;
+}
+
+#clearButton:hover {
+	background-color: hsl(0, 0%, 45%);
+	text-decoration: underline;
+}
+
+#formTable {
+	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+	border-collapse: collapse;
+	width: 100%;
+	margin: 0 auto;
+	border: 0px solid grey;
+	/* 	do this if you don't want a border */
+}
+
+#leftColumn {
+	text-align: right;
+}
+
+#rightColumn {
+	text-align: left;
+}
+
+#centerColumn {
+	text-align: right;
+	/* 	also align right so everything goes in the center */
+	/* and 1 column rows are treated as the 1st column still */
+}
+
+#formTable th {
+	/* 	padding-top: 12px; */
+	/* 	padding-bottom: 12px; */
+	padding: 12px;
+	/* 	background-color: hsla(120, 50%, 75%, 1); */
+	/* 	color: grey; */
+	text-decoration: underline;
+	font-size: 16pt;
+}
+
+#formTable td, #customers th {
+	/* 	border: 1px solid #ddd; */
+	/* no border pls  */
+	border: 0px solid hsla(0, 0%, 0%, 0);
+	padding: 8px;
+}
+
+#formTable tr:nth-child(even) {
+	/* 	background-color: #f2f2f2; */
+	/* we can also turn off this for now too  */
+	
+}
+
+#formTable tr:hover {
+	/* 	background-color: #ddd; */
+	/* pretty cool, but not useful in this situation */
+	
+}
+
+input[type=text], input[type=password], input[type=number] {
+	/* 	color: white; */
+	padding: 16px 32px;
+}
+
+input[type=text] {
+	background-color: hsla(0, 0%, 80%, 1); /* grey */
+}
+
+#inputUsernameTextbox {
+	background-color: hsla(120, 50%, 75%, 1); /* green */
+}
+
+input[type=password] {
+	background-color: hsla(0, 50%, 75%, 1); /* red */
+}
+
+/* Clear floats after the columns */
+section:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+/* Style the footer */
+footer {
+	background-color: hsla(0, 0%, 40%, 0.46);
+	padding: 1px;
+	text-align: center;
+	background-color: hsla(0, 0%, 40%, 0.46); /* transparent grey */
+}
+
+#copyrightText {
+	font-style: italic;
+}
+
+/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+@media ( max-width : 600px) {
+	nav, article {
+		width: 100%;
+		height: auto;
+	}
+}

@@ -1,8 +1,8 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html> -->
 <!--
 CIST 2931 - Team 3
 -->
-<html>
+<!-- <html>
     <head>
         <title>TODO supply a title</title>
         <meta charset="UTF-8">
@@ -11,4 +11,48 @@ CIST 2931 - Team 3
     <body>
         <div>TODO write content</div>
     </body>
-</html>
+</html> -->
+
+
+<!-- shall try using my index.jsp from java iii (nick hall)  
+        from: 
+        H:\06 programming src source code backup (eclipse java)\java_bucky_tuts\eclipse java-oxygen workspace\java_iii_part_2\WebContent
+        but VS CODE absolutely sucks as a dynamic IDE for java (my experience) 
+-->
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+    pageEncoding="ISO-8859-1"%>
+
+    <!DOCTYPE html>
+    <html lang="en">
+
+    <head>
+        <meta charset="ISO-8859-1">
+        <title>Home - Atlanta Chiropractic Center</title>
+        <link rel="shortcut icon" type="image/png" href="https://i.imgur.com/XbwtGqu.png" />
+        <link href="styles.css" rel="stylesheet" type="text/css" />
+    </head>
+
+    <body>
+        <header>
+            <h1>Welcome to Atlanta Chiropractic Center</h1>
+        </header>
+        <div class="center">
+            <!-- <img src="https://i.imgur.com/7vhoRuz.jpg" width="640" height="400" alt="dentist" title="Get healthy teeth today!" /> -->
+            <img src="chiropractor-with-patient.jpg" width="645" height="305" alt="dentist" title="Breakin backs since 1999!" />
+            <br>
+            <p><i>Login to get started.</i></p>
+            <!-- <form action="login.jsp"> -->
+            <form action="login.html">
+                <!-- form action="" is case sensitive!!!*** -->
+                <input type="submit" value="Login" id="loginButton">
+            </form>
+        </div>
+        <footer>
+            <p id="copyrightText">Copyright
+                <% Date() %>
+            </p>
+        </footer>
+
+    </body>
+
+    </html>
