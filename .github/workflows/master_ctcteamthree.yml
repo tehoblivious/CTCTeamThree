@@ -1,3 +1,6 @@
+# Docs for the Azure Web Apps Deploy action: https://github.com/Azure/webapps-deploy
+# More GitHub Actions for Azure: https://github.com/Azure/actions
+
 name: Build and deploy JAR app to Azure Web App - ctcteamthree
 
 on:
@@ -25,5 +28,5 @@ jobs:
       with:
         app-name: 'ctcteamthree'
         slot-name: 'production'
-        publish-profile: ${{ secrets.AzureAppService_PublishProfile_560a607ec15843099c8e926bed5208d9 }}
+        publish-profile: ${{ secrets.AzureAppService_PublishProfile_51d6d8d4f1784e2480b7c951a450e040 }}
         package: '${{ github.workspace }}/target/*.jar'
